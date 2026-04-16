@@ -1,10 +1,10 @@
 import flet as ft
-from controllers.userController import AuthController
-from controllers.tareaController import TareaController 
+from src.controllers.userController import AuthController
+from src.controllers.tareaController import TareaController 
 from views.loginView import LoginView
 from views.dashboard import DashboardView
 
-def main(page: ft.Page):
+def start(page: ft.Page):
     auth_ctrl = AuthController()
     tarea_ctrl = TareaController() 
     
@@ -25,7 +25,7 @@ def main(page: ft.Page):
     page.go("/")
     
 def main():
-    ft.app(target=main)
+    ft.app(target=start)
 
 if __name__ == "__main__":
     ft.run(main)
