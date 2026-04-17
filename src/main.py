@@ -1,8 +1,8 @@
 import flet as ft
 from controllers.userController import AuthController
 from controllers.tareaController import TareaController 
-from views.loginView import LoginView
-from views.dashboard import DashboardView
+from view.loginView import LoginView
+from view.dashboard import DashboardView
 
 def start(page: ft.Page):
     auth_ctrl = AuthController()
