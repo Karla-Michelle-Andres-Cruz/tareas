@@ -1,7 +1,7 @@
-from models.tarea import tarea
+from models.tareas import tareas
 class TareaController:
     def __init__(self):
-        self.model = tarea()
+        self.model = tareas()
         
     def btener_lista(self, id_usuario):
         return self.model.listar_por_usuario(id_usuario)

@@ -1,4 +1,4 @@
-from .datebase import Database
+from .database import Database
 
 class TareaModel:
     def __init__(self):
